@@ -15,7 +15,7 @@ To deal with this issue, programmers long ago developed local VCSs that had a si
 
 #### Local VCS: A not so bad attempt
 
-<img src="localsystem.PNG" width="400" height="300"/>
+<img src="res/localsystem.PNG" width="400" height="300"/>
 
 This is all fine and dandy if you're working alone, which, aside for the select few, is highly unlikely in our line of work.
 
@@ -23,7 +23,7 @@ A much more dynamic and team-supportive approached is what is calle the **Centra
 
 #### Centralized VCS: A valiant effort
 
-<img src="centralizedsystem.PNG" width="500" height="300"/>
+<img src="res/centralizedsystem.PNG" width="500" height="300"/>
 
 The benefits of this **push-pull architecture** are more than obvious.
 
@@ -42,12 +42,12 @@ This is where distributed version control systems step in and save the day - in 
 In the case of the root node failing, because each and every client node has a virtually entire, working copy of the project, it can then restore the root node, updatind it with the necessary changes once it gets back online.
 Even better, if configured so, any client node can become a secondary root node, thus, taking up the responsibilities of the root node in case of failure.
 
-<img src="distributedsystem.PNG" width="500" height="300"/>
+<img src="res/distributedsystem.PNG" width="500" height="300"/>
 
 
 ## VCS Options: The Who?
 
-![](vcs.PNG)
+![](res/vcs.PNG)
 
 The market is not scarce when it comes to the pool of available version control systems, but, we'll focus on the 
 two most *popular* version control systems: **Subversion** and **Git**
@@ -91,7 +91,7 @@ The Git workflow is similar to SVN, but with few extra steps:
 
 - Push to remote: Finally, push out the your local/branch to the remote/branch and merge the changes.
 
-![](merge.PNG)
+![](res/merge.PNG)
 
 Many people prefer Git for version control for a few reasons:
 
@@ -113,16 +113,16 @@ Let's find out why, but first, a bried reminder about what merging actually is:
 
 Let's assume that you branch off master/trunk and start doing some work:
 
-![](merge1.PNG)
+![](res/merge1.PNG)
 
 
 Presumably some error is found on master that doesn't really affect you, so a hotfix is due
 
-![](merge2.PNG)
+![](res/merge2.PNG)
 
 Now, once you are finished with your work and ready to share it the rest of the team you push it back to master, and merge it with the central, root repository.
 
-![](merge3.PNG)
+![](res/merge3.PNG)
 
 Here, a special merge commit is made in case any <span style="color:red">**conflicts**</span> appear.
 
@@ -200,10 +200,10 @@ It's best to be an expert in the most popular tool, because usually that's the h
 Evolution of the market share has shifted drastically in the last few years:
 
 Here is the market share for early 2012:
-![](2012.PNG)
+![](res/2012.PNG)
 
 And then the market share for late 2018:
-![](2018.PNG)
+![](res/2018.PNG)
 
 It is quite evident that **Git** has gained the upper hand and cemented itself as the VCS system to chose.
 
